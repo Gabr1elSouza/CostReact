@@ -1,5 +1,39 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "name": "fxffxfxf",
+      "budget": "5555",
+      "category": {
+        "id": "3",
+        "name": "Desing"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 1
+    },
+    {
+      "name": "dasdasd",
+      "budget": "5555",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 2
+    },
+    {
+      "name": "dasdasd",
+      "budget": "5555",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 3
+    }
+  ],
   "categories": [
     {
       "id": 1,
@@ -7,16 +41,15 @@
     },
     {
       "id": 2,
-      "name":"Desenvolvimento"
+      "name": "Desenvolvimento"
     },
     {
       "id": 3,
-      "name":"Desing"
+      "name": "Desing"
     },
     {
       "id": 4,
-      "name":"Planejamento"
+      "name": "Planejamento"
     }
-
   ]
 }
