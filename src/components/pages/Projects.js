@@ -13,6 +13,7 @@ function Projects(){
 
     const [projects, setProjects]= useState([])
     const [removeLoading, setRemoveLoading] = useState(false)
+    const [ProjectMessage, setProjectMessage] = useState('')
 
     const location = useLocation()
     let message = ''
@@ -34,8 +35,21 @@ function Projects(){
             setProjects(data)
             setRemoveLoading(true)
         }).catch((err)=> console.log(err))
-        },3000)
+        },300)
     },[])
+
+    function removeProject(id){
+        fetch(`http://localhost:5000/projects/${id}`,{
+          method: 'DELETE',
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        }).then(resp  => resp.json())
+        .then((data)=>{
+            setProjects(projects.filter((project)=> project.id !== id))
+            setProjectMessage('Projeto Removido com sucesso')
+        }).catch((err) => console.log(err))
+    }
     
     return (
         <div className={styles.project_container}>
@@ -44,6 +58,7 @@ function Projects(){
                 <LinkButton to="/newproject" text='Criar Projeto' ></LinkButton>
             </div>
             {message && <Message type="success" msg={message} />}
+            {ProjectMessage && <Message type="success" msg={ProjectMessage} />}
             <div className={styles.container}>
                 {projects.length > 0 && 
                 projects.map((project)=>(
@@ -53,6 +68,7 @@ function Projects(){
                     budget={project.budget}
                     category={project.category.name}
                     key={project.id}
+                    handleRemove={removeProject}
                     />
                 ))}
 

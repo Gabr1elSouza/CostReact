@@ -1,39 +1,6 @@
 {
   "projects": [
     {
-      "name": "fxffxfxf",
-      "budget": "5555",
-      "category": {
-        "id": "3",
-        "name": "Desing"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 1
-    },
-    {
-      "name": "dasdasd",
-      "budget": "5555",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 2
-    },
-    {
-      "name": "dasdasd",
-      "budget": "5555",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 3
-    },
-    {
       "name": "Gabriel Souza",
       "budget": "10000",
       "category": {
@@ -43,94 +10,6 @@
       "cost": 0,
       "services": [],
       "id": 4
-    },
-    {
-      "name": "teste",
-      "budget": "5555",
-      "category": {
-        "id": "3",
-        "name": "Desing"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 5
-    },
-    {
-      "name": "ASASFAS",
-      "budget": "5455",
-      "category": {
-        "id": "4",
-        "name": "Planejamento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 6
-    },
-    {
-      "name": "s6a5d4a6s5",
-      "budget": "21213",
-      "category": {
-        "id": "4",
-        "name": "Planejamento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 7
-    },
-    {
-      "name": "kjsnafksnfak",
-      "budget": "513513",
-      "category": {
-        "id": "3",
-        "name": "Desing"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 8
-    },
-    {
-      "name": "fasfasfa",
-      "budget": "5156315",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 9
-    },
-    {
-      "name": "testes",
-      "budget": "6621",
-      "category": {
-        "id": "3",
-        "name": "Desing"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 10
-    },
-    {
-      "name": "kjsdjbssajbsaj",
-      "budget": "63",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 11
-    },
-    {
-      "name": "Anuncio",
-      "budget": "2000",
-      "category": {
-        "id": "4",
-        "name": "Planejamento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 12
     }
   ],
   "categories": [
