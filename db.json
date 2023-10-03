@@ -2,10 +2,10 @@
   "projects": [
     {
       "name": "Gabriel Souza",
-      "budget": "10000",
+      "budget": "17000",
       "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
+        "id": "4",
+        "name": "Planejamento"
       },
       "cost": 0,
       "services": [],
