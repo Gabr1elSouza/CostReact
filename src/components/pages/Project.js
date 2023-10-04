@@ -11,6 +11,7 @@ function Project(){
     
     const [project, setProject]= useState([])
     const [showProjectForm, setShowProjectForm]= useState(false)
+    const [showServiceForm, setShowServiceForm]= useState(false)
     const [message, setMessage] = useState()
     const [type, setType]= useState()
 
@@ -31,7 +32,8 @@ function Project(){
     },[id])
 
     function editPost(project){
-        console.log(project)
+        //console.log(project)
+        setMessage('')
 
         //buget validation
         if(project.budget < project.cost){
@@ -63,6 +65,10 @@ function Project(){
         setShowProjectForm(!showProjectForm)
     }
 
+    function toggleServiceForm(){
+        setShowServiceForm(!showServiceForm)
+    }
+
     return(
        <>
        {project.name ? (
@@ -88,6 +94,20 @@ function Project(){
                 ):(<div className={styles.project_info}>
                     <ProjectForm handleSubmit={editPost} btntext="Concluir edição" projectData={project}/>
                     </div>)}
+            </div>
+            <div className={styles.service_form_container}>
+                    <h2>Adicione um serviço:</h2>
+                    <button onClick={toggleServiceForm} className={styles.btn}>
+                        {!showServiceForm ? 'Adicionar serviço' : "Fechar"}
+                    </button>
+                    <div className={styles.project_info}>
+                        {showServiceForm && <div> Formulário do serviço</div>}
+                    </div>
+                    </div>
+                    <div>
+
+                    <h2>Serviços</h2>
+                    <p>itens de serviços</p>
             </div>
         </div>
         ): (
