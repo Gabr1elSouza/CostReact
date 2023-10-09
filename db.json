@@ -7,46 +7,9 @@
         "id": "4",
         "name": "Planejamento"
       },
-      "cost": 6020,
-      "services": [
-        {
-          "name": "teste",
-          "cost": "20",
-          "description": "teste",
-          "id": "65adf2de-77a1-4a35-b8e3-61b3b88f1a81"
-        },
-        {
-          "name": "teste2",
-          "cost": "6000",
-          "description": "faz isso aqui",
-          "id": "b59b5207-4b8b-43ba-a7d4-15737ba1cca3"
-        }
-      ],
+      "cost": 0,
+      "services": [],
       "id": 4
-    },
-    {
-      "name": "Teste ",
-      "budget": "900",
-      "category": {
-        "id": "3",
-        "name": "Desing"
-      },
-      "cost": 200,
-      "services": [
-        {
-          "name": "Contratar Dev PHP",
-          "cost": "100",
-          "description": "Vai criar a função de envio de e-mails",
-          "id": "84a35fe3-2997-44c2-9e3a-2d1ec4307d19"
-        },
-        {
-          "name": "novo serviço ",
-          "cost": "100",
-          "description": "teste 4",
-          "id": "e4eeff16-c71e-4142-947a-2a39f37c53e2"
-        }
-      ],
-      "id": 5
     }
   ],
   "categories": [

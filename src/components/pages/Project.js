@@ -103,9 +103,9 @@ function Project(){
         .then((data)=>{
             //exibir o serviços
             // console.log(data)
-            showServiceForm(false)
             setMessage('Serviço criado com sucesso!')
             setType('success')
+            setShowServiceForm(false)
 
         })
         .catch((err)=> console.log(err))
@@ -118,8 +118,31 @@ function Project(){
     function toggleServiceForm(){
         setShowServiceForm(!showServiceForm)
     }
-    function removeService(){
+    function removeService(id, cost){
+        setMessage('')
 
+        const ServiceUpdated = project.services.filter((service) => service.id !== id)
+    
+        const projectUpdated = project
+
+        projectUpdated.services = ServiceUpdated
+
+        projectUpdated.cost = parseFloat(projectUpdated.cost) - parseFloat(cost)
+        
+        fetch(`http://localhost:5000/projects/${projectUpdated.id}`,{
+            method: 'PATCH',
+            headers: {
+                'Content-Type' : 'application/json'
+            },
+            body: JSON.stringify(projectUpdated)
+        }).then((resp)=> resp.json())
+        .then((data)=> {
+            setProject(projectUpdated)
+            setServices(ServiceUpdated)
+            setType('success')
+            setMessage('Serviço removido com sucesso!')
+        })
+        .catch((err)=> console.log(err))
     }
 
     return(
@@ -172,7 +195,7 @@ function Project(){
                                 cost={service.cost}
                                 description={service.description}
                                 key={service.id}
-                                handleRemove={service.removeService}
+                                handleRemove={removeService}
 
                             />
                         ))
